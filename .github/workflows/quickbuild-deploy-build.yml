@@ -85,7 +85,7 @@ jobs:
 
       - name: Authenticate to DEV sandbox
         run: |
-          echo "${{ secrets.DEV_SFDX_AUTH_URL }}" > ./dev_authfile
+          echo "${{ secrets.AUTO1_SFDX_AUTH_URL }}" > ./dev_authfile
           sf org login sfdx-url  -f ./dev_authfile -a dev
 
       - name: 'Deploy to DEV'
